@@ -911,6 +911,7 @@ void __noreturn make_task_dead(int signr)
 
 	do_exit(signr);
 }
+EXPORT_SYMBOL(make_task_dead);
 
 SYSCALL_DEFINE1(exit, int, error_code)
 {
